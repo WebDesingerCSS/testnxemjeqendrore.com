@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: rgb(74, 83, 75);
+      color: white;
+    }
+
+    .div1 {
+      background-image: url("logo1.png");
+      background-repeat: no-repeat;
+      height: 600px;
+      width: 600px;
+      margin-top: 200px;
+    }
+
+    .header1 {
+      margin-left: 1000px;
+      margin-top: -700px;
+    }
+
+    .header2 {
+      margin-left: 900px;
+    }
+
+    #imageContainer {
+      margin-left: 1000px;
+    }
+
+    img {
+      width: 500px;
+      height: 500px;
+      display: block;
+      position: absolute;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #image1 {
+      opacity: 1;
+    }
+
+    .toggleButton {
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: white;
+      transition: background-color 0.3s ease-in-out;
+      text-decoration: none;
+      border-radius: 70px;
+      height: 40px;
+      width: 100px;
+    }
+
+    .toggleButton:hover {
+      background-color: blue;
+      color: rgb(83, 83, 151);
+    }
+    .sear111{
+        background-color: rgb(83, 83, 151);
+        width: 600px;
+        height: 50px;
+        border-radius: 70px;
+        padding-left: 30px;
+        margin-left: 1000px;
+        margin-top: 600px;
+        padding-bottom: 10px;
+    }
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nxemje Qendrore 𝗔𝗥𝗠</title>
+
+  <link rel="icon" href="logo1.png" type="image/png" class="s1">
+  <link rel="icon" href="logo1.png" sizes="16x16" type="image/png" class="s1">
+  <link rel="icon" href="logo1.png" sizes="32x32" type="image/png" class="s1">
+</head>
+<body>
+  <div class="div1"></div>
+  <h1 class="header1">Nxemje Qendrore</h1>
+  <h2 class="header2">Ne bejme instalimin e 2 lloje te radiatoreve siq jane:</h2>
+
+
+  <div class="fotoe1">
+    <div id="imageContainer">
+    <img id="image1" src="nxemjemidysheme.2.PNG" alt="First Photo">
+    </div>  
+   
+  </div>
+
+
+  <div class="fotoe1">
+        <div id="imageContainer">
+    <img id="image2" src="searsearsear123123.png" alt="Second Photo" style="opacity: 0;">
+    </div> 
+
+  </div>
+
+
+
+    
+
+
+<div class="sear111">
+      <button class="toggleButton" onclick="showImage(1)">Radiator ne mure</button>
+      <button class="toggleButton" onclick="showImage(2)">Radiator nen dysheme</button>
+</div>
+
+
+  <script>
+    // JavaScript to toggle between the two images
+    function showImage(imageNumber) {
+      var image1 = document.getElementById('image1');
+      var image2 = document.getElementById('image2');
+      var button1 = document.getElementsByClassName('toggleButton')[0];
+      var button2 = document.getElementsByClassName('toggleButton')[1];
+
+      // Toggle the visibility of the images
+      if (imageNumber === 1) {
+        image1.style.opacity = '1';
+        image2.style.opacity = '0';
+        button1.style.backgroundColor = 'blue';
+        button2.style.backgroundColor = 'white';
+      } else {
+        image1.style.opacity = '0';
+        image2.style.opacity = '1';
+        button1.style.backgroundColor = 'white';
+        button2.style.backgroundColor = 'blue';
+      }
+    }
+  </script>
+</body>
+</html>
